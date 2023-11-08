@@ -1,6 +1,6 @@
 .navigation {
     display: none;
-
+ 
     &__list {
         display: flex;
         align-items: center;
@@ -25,8 +25,6 @@
         transform: scale(1);
         transition: color var(--default-transition),
         transform var(--default-transition);
-        // font-size var(--default-transition);
-
         /* Навігація ховер, фокус */
             &:hover,
             &:focus {

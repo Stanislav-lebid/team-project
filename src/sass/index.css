@@ -1,4 +1,94 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
+::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 16px;
+  }
+}
+
+.navigation {
+  display: none;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 140px;
+}
+.navigation__item:not(:last-child) {
+  margin-right: 35px;
+}
+.navigation__link {
+  display: block;
+  position: relative;
+  font-family: var(--fontFamaly-secondary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  padding: 8px 0;
+  color: var(--colorText-secondary);
+  transform: scale(1);
+  transition: color var(--default-transition), transform var(--default-transition);
+  /* Навігація ховер, фокус */
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: var(--colorText-primary);
+  transform: scale(1.1);
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 :root {
   --colorText-primary: #d41443;
   --colorText-secondary: #ffffff;
