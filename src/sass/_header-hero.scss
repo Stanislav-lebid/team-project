@@ -1,0 +1,482 @@
+
+
+.hero-header{
+    width: 100%;
+    background-color: #FFB8CA;
+    z-index: -1;
+    
+    overflow: hidden;
+}
+.hero-header__cont{
+    position: relative;
+    height: 502px;
+    @media screen and (min-width: 768px) {
+        height: 416px;
+        overflow: hidden;
+}
+
+    @media screen and (min-width: 1200px) {
+        height: 664px;
+        
+    }
+}
+
+.hero{
+    padding-top: 102px;
+
+    @media screen and (min-width:1200px){
+        padding-top: 150px;
+    }
+}
+.hero__left{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.hero-pre {
+    z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-pre {
+    position: absolute;
+    top: 194px;
+    }
+}
+
+.hero__title{
+font-family: var(--fontFamaly-primary);
+font-weight: 400;
+font-size: 26px;
+line-height: 1.153;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #ffffff;
+
+}
+@media screen and (max-width: 767px) {
+    .hero__title {
+    width: 218px;
+    margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero__title {
+    font-size: 22px;
+    line-height: 1.136;
+    width: 162px;
+    margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__title {
+    width: 277px;
+    margin-bottom: 24px;
+    font-size: 38px;
+    line-height: 1.157;
+    }
+}
+
+
+.hero__title--big{
+    font-family: var(--fontFamaly-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 0.958;
+    text-transform: uppercase;
+    color: var(--colorText-primary);
+}
+
+@media screen and (min-width: 768px) {
+    .hero__title--big {
+    font-size: 34px;
+    line-height: 0.911;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__title--big {
+    font-size: 58px;
+    line-height: 0.896;
+    }
+}
+
+.hero__list{
+    display: flex;
+}
+.hero__item{
+    display: flex;
+}
+.hero__item:last-child{
+    margin-left: 8px;
+}
+@media screen and (min-width: 1200px) {
+    .hero__item:last-child {
+    margin-left: 12px;
+    }
+}
+
+.hero__link{
+font-family: var(--fontFamaly-secondary);
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+font-size: 8px;
+line-height: 1.25;
+height: 24px;
+transition: background-color var(--default-transition), color var(--default-transition), transform var(--default-transition);
+transform: scale(1);
+
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.285;
+    height: 40px;
+}
+}
+
+
+.hero__link--red{
+    width: 62.5px;
+    background-color: var(--colorText-primary);
+    color: var(--colorText-secondary);
+    padding: 7px 15px;
+    &:hover, &:focus{
+        background-color: #d41444bb;
+        transform: scale(1.1);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 107px;
+        height: 40px;
+        padding: 11px 25px;
+    }
+}
+
+
+
+.hero__link--white{
+width: 83px;
+background-color: var(--colorText-secondary);
+color: var(--colorText-primary);
+padding: 7px 13px;
+
+&:hover, &:focus{
+    background-color: var(--bgc-btnHover);
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 1200px) {
+    width: 138px;
+    height: 40px;
+    padding: 11px 20px;
+}
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .hero__list--numbers {
+    display: none;
+    }
+}
+
+.hero__item--numbers{
+    position: relative;
+    
+}
+.hero__item--numbers:not(:last-child){
+    margin-bottom: 16px;;
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__item--numbers:not(:last-child) {
+    margin-bottom: 15px;
+    }
+}
+
+.hero__item--numbers::after{
+content: "";
+position: absolute;
+top: -1;
+right: 0;
+width: 16px;
+height: 16px;
+background-color: var(--colorText-secondary);
+border-radius: 50%;
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__item--numbers::after {
+    width: 30px;
+    height: 30px;
+    top: -4;
+    right: 0;
+    }
+}
+
+.hero__text--numbers{
+font-family: var(--fontFamaly-primary);
+font-weight: 400;
+font-size: 28px;
+line-height: 1.142;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+position: relative;
+z-index: 1;
+margin-bottom: 0;
+width: 51px;
+text-align: center;
+color:var(--colorText-primary);
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero__text--numbers {
+    font-size: 46px;
+    line-height: 1.152;
+    position: relative;
+    z-index: 1;
+    width: 93px;
+    margin-bottom: 2px;
+    }
+}
+
+
+.hero__text--pre, .hero__text--sub{
+font-family: var(--fontFamaly-secondary);
+font-weight: 400;
+font-size: 8px;
+line-height: 1.25;
+color: var(--colorText-secondary);
+display: block;
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__text--pre, .hero__text--sub {
+    font-size: 14px;
+    line-height: 1.285;
+    }
+}
+
+.hero__text--pre{
+    display: block;
+    text-align: center;
+}
+
+
+
+.hero-thumb__milk{
+    display: none;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .hero-thumb__milk {
+    position: absolute;
+    left: 32px;
+    bottom: 16px;
+    display: flex;
+    
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-thumb__milk {
+    position: absolute;
+    left: 16px;
+    bottom: 60px;
+    }
+}
+
+.hero-thumb__decription{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 5;
+    
+}
+.hero-thumb__text{
+font-family: var(--fontFamaly-secondary);
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 1.5;
+width: 114px;
+height: 48px;
+color: var(--colorText-secondary);
+margin-bottom: 7px;
+
+@media screen and (min-width:1200px){
+    margin-bottom: 20px;
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero-thumb__text {
+    width: 200px;
+    height: 78px;
+    font-size: 14px;
+    line-height: 1.42;
+    }
+}
+
+.hero-thumb__btn--arrow{
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 24px;
+    transition: box-shadow var(--default-transition),  transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform:rotate(0deg);
+
+    &:hover, &:focus{
+        box-shadow: inset 0px 0px 0px 0px #d4144366, 0px 0px 8px 4px #d4144366;
+        transform:rotate(360deg);
+    }
+}
+
+.hero-thumb__girl{
+    display: none;
+        overflow: hidden;
+        @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        right: 32px;
+        bottom: 0;
+        z-index: 2;
+        
+        
+    
+    }
+    @media screen and (min-width: 1200px) {
+        right: 32px;
+        right: 16px;
+        
+    }
+}
+
+
+
+// делаем герой мороженки
+
+.hero-thumb__ice{
+    position: absolute;
+    top: 83px;
+    left: 36px;
+    width: 346px;
+    height: 344px;
+    background: var(--colorText-third);
+    border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+    .hero-thumb__ice {
+    top: 43px;
+    left: 248px;
+    width: 335px;
+    height: 333px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-thumb__ice {
+    width: 534px;
+    height: 534px;
+    top: 54px;
+    left: 516px;
+    right: 189px;
+    }
+}
+
+.hero__ice{
+    position: absolute;
+    top: 15px;
+    left: 81px;
+    width: 171px;
+    transition: var(--default-transition);
+    transform: scale(1);
+    &:hover, &:focus{
+        transform: scale(1.1);
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero__ice {
+    top: 37px;
+    left: 74px;
+    width: 143px;
+    
+}
+}
+@media screen and (min-width: 1200px) {
+    .hero__ice {
+    top: 54px;
+    left: 119px;
+    width: 236px;
+    }
+}
+
+.arrow-img{
+    min-width: 18px;
+    @media screen and (min-width: 1200px) {
+        min-width: 26px;
+}
+}
+
+@keyframes transformMilk{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes transformMilkText{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes transformGirl{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.hero-thumb__milk{
+    animation-name: transformMilk;
+    animation-duration: 2000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode:backwards;
+}
+
+.hero-thumb__decription{
+    animation-name: transformMilkText;
+    animation-duration: 2000ms;
+    animation-delay: 500ms;
+    animation-fill-mode:backwards;
+}
+
+.img__girl{
+    animation-name: transformGirl;
+    animation-duration: 2000ms;
+    animation-delay: 2000ms;
+    animation-fill-mode:backwards;
+}
+
