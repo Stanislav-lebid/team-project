@@ -1,5 +1,28 @@
 @charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --colorText-primary: #d41443;
+  --colorText-secondary: #ffffff;
+  --colorText-third: #ffa5ba;
+  --colorText-other: #000000;
+  --colorText-accent: #907e82;
+  --color-icon: #fea5bb;
+  --bgc-primary: #fff5f6;
+  --bgc-secondary: #ffb8ca;
+  --bgc-modal: #e17992;
+  --bgc-btnHover: #ecebeb;
+  --bgc-other: #f0d1a5;
+  --bgc-accent: #c2e297;
+  --border-decorative: #e1e1e1;
+  --hover-primary: #f88ca5;
+  --hover-secondary: #e8c086;
+  --hover-third: #acd17b;
+  --bgc-btnHoverAccent: #bd123c;
+  --fontFamaly-primary: "Titan One", cursive;
+  --fontFamaly-secondary: "DM Sans", sans-serif;
+  --default-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 ::after,
 *::before {
   box-sizing: inherit;
@@ -87,29 +110,6 @@ a {
     align-items: center;
     justify-content: center;
   }
-}
-
-:root {
-  --colorText-primary: #d41443;
-  --colorText-secondary: #ffffff;
-  --colorText-third: #ffa5ba;
-  --colorText-other: #000000;
-  --colorText-accent: #907e82;
-  --color-icon: #fea5bb;
-  --bgc-primary: #fff5f6;
-  --bgc-secondary: #ffb8ca;
-  --bgc-modal: #e17992;
-  --bgc-btnHover: #ecebeb;
-  --bgc-other: #f0d1a5;
-  --bgc-accent: #c2e297;
-  --border-decorative: #e1e1e1;
-  --hover-primary: #f88ca5;
-  --hover-secondary: #e8c086;
-  --hover-third: #acd17b;
-  --bgc-btnHoverAccent: #bd123c;
-  --fontFamaly-primary: "Titan One", cursive;
-  --fontFamaly-secondary: "DM Sans", sans-serif;
-  --default-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
