@@ -39,7 +39,49 @@ a {
         max-width: 1200px;
         padding: 0 16px;
     }
-    
-
-  
 }
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    padding: 0;
+    font-family: var(--fontFamaly-secondary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    cursor: pointer;
+    transition: background-color var(--default-transition),
+    color var(--default-transition),
+    transform var(--default-transition);
+  }
+  
+  .button-arrow::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    margin-left: 12px;
+    background-image: url(../images/icons/Vector1.svg); 
+  }
+  
+  .button__icon {
+    width: 6px;
+    height: 10px;
+    margin-left: 12px;
+    fill: var(--colorText-secondary);
+  
+    &--light {
+      fill: var(--colorText-primary);
+    }
+  }
+  
+  body.modal-open {
+    overflow: hidden;
+  }
