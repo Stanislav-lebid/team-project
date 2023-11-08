@@ -1,3 +1,4 @@
+/* Хедер */
 .header-nav {
     position: absolute;
     top: 0;
@@ -14,7 +15,6 @@
             flex-grow: 1;
         }
     }
-    
     &__outer-margin {
         @include media-max (768px) {
             padding: 8px 0 8px 0;
