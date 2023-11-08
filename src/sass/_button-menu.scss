@@ -1,0 +1,43 @@
+.button-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    @include media-min (768px) {
+        margin-right: 32px;
+    }
+    
+    @include media-min (1200px) {
+        display: none;
+    }
+}
+
+.button-menu {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &__thumb-icon{
+        stroke: var(--colorText-primary);
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        transition: stroke var(--default-transition), 
+        transform var(--default-transition);
+        .button-menu:hover &,
+        .button-menu:focus &{
+            stroke: var(--colorText-secondary);
+            transform: scale(1.2);
+        }
+    }
+
+    
+    @include media-min (1200px) {
+        display: none;
+    }
+
+}
