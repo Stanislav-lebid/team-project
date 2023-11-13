@@ -85,3 +85,18 @@ a {
   body.modal-open {
     overflow: hidden;
   }
+  .is-hidden{
+    display: none;
+  }
+  .backdrop{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    z-index: 10;
+    background-color: rgba(0,0,0,.2);
+    transition: opacity .25s cubic-bezier(.17,.67,.83,.67),visibility .25s cubic-bezier(.17,.67,.83,.67);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+  }

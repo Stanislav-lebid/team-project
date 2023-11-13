@@ -1,0 +1,80 @@
+.locations{
+   width: 280px;
+    
+    height: 250px;
+    background-color: var(--bgc-secondary);
+    border: 1px solid var(--bgc-modal);
+    border-radius: 8px;
+    transition: transform .25s cubic-bezier(.17,.67,.83,.67);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+    transform: translate(-50%,-50%)scale(1);
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 1px rgba(0,0,0,.14), 0 2px 1px rgba(0,0,0,.2);
+    padding: 20px;
+    @include media-min(320px) {
+        width: 300px;
+       
+       
+    }
+    @include media-min(768px) {
+        width: 500px;
+        height: 412px;
+       
+    }
+    @include media-min(1200px) {
+        width: 660px;
+        height: 500px;
+       
+    }
+    &__map{
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+    &__title{
+        color: var(--colorText-primary);
+        text-align: center;
+        margin-bottom: 10px;
+       font-family: var(--fontFamaly-primary);
+        font-size: 16px;
+        display: block;
+        @include media-min(768px) {
+            font-size: 26px;
+           
+           
+        }
+    }
+    &__data{
+        display: flex;
+        flex-direction: column; /* Змініть це на 'row' для горизонтального розміщення */
+        align-items: center; /* Вирівнює елементи в центрі по вертикалі */
+        justify-content: center;
+        margin-top: 10px;
+    }
+    &__button-clouse{
+
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        stroke: var(--colorText-primary);
+        cursor: pointer;
+        transition: stroke var(--default-transition),transform var(--default-transition);
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.1);
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        transform: scale(.9);
+        &:hover{
+            stroke: var(--colorText-other);
+            transform: scale(1.1);
+        }
+    }
+    
+}

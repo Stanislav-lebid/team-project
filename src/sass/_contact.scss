@@ -149,6 +149,12 @@
     &__link{
         color: var(--colorText-accent);
         line-height: 18px;
+        scale: 1;
+        
+        &:hover,:focus{
+            color: var(--colorText-primary);
+            transform: scale(1.1);
+        }
         
     }
 }    
