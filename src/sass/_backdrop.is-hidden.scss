@@ -1,0 +1,12 @@
+/* backdrop */
+.backdrop-mobile.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.backdrop-mobile.is-hidden .backdrop-mobile__container { 
+    transform: translatey(-100%);
+
+}

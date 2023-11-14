@@ -1,0 +1,32 @@
+.mobile-menu {
+    &__button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    &__icon-thumb {
+        stroke: var(--colorText-secondary);
+        transform: scale(1);
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: stroke var(--default-transition),
+        transform var(--default-transition);
+        .mobile-menu__button:hover &,
+        .mobile-menu__button:focus & {
+            stroke: var(--colorText-primary);
+            transform: scale(1.3);
+        }
+    }
+    &__icon {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
