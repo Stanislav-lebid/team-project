@@ -1,0 +1,25 @@
+.button-mobile {
+    width: 210px;
+    height: 44px;
+    margin: 0 auto;   
+    transform: scale(1);
+    color: var(--colorText-primary);
+    background-color: var(--colorText-secondary);
+    transition: transform var(--default-transition),
+    background-color var(--default-transition);
+    @include media-min (768px) {
+        width: 186px;
+    }
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+        background-color: var(--bgc-btnHover);
+    }
+}
+
+
+.button-container {
+    display: block;
+    padding: 60px 20px 20px 20px;
+}
+ 
