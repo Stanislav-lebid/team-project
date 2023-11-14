@@ -1,0 +1,177 @@
+.backdrop.is-hidden .modal-list {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+
+.modal-list {
+
+    scrollbar-color: var(--bgc-btnHoverAccent) var(--bgc-primary);
+    scrollbar-width: thin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 280px;
+    width: 100%;
+    height: 250px;
+    background-color: var(--bgc-secondary);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid var(--bgc-modal);
+    overflow: auto;
+    
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(.17, .67, .83, .67);
+
+        &__close-button {
+                position: absolute;
+                
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                top: 10px;
+                right: 10px;
+                height: 30px;
+                width: 30px;
+                
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                background-color: white;
+                stroke: var(--colorText-primary);
+                border-radius: 50%;
+                cursor: pointer;
+                transform: scale(0.9);
+                transition: stroke var(--default-transition),
+                transform var(--default-transition);
+                @include media-min (768px) {
+                    transform: scale(1.1);
+                }
+                @include media-min (1200px) {
+                    transform: scale(1.2);
+                }
+                &:hover,
+                &:focus {
+                    stroke: var(--colorText-other);
+                    transform: scale(1.1);
+                    @include media-min (768px) {
+                        transform: scale(1.3);
+                    }
+                    @include media-min (1200px) {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+
+                            
+
+
+}
+
+@media screen and (min-width: 768px){
+     .modal-list {
+        max-width: 500px;
+        height: 350px;
+
+   }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-list {
+        max-width: 700px;
+        height: 450px;
+
+    }
+}
+
+
+
+.modal-inner {
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-inner{
+        padding: 40px;
+    }
+
+        .modal-inner::-webkit-scrollbar {
+            width: 24px;
+            /* ширина для вертикального скролла */
+            height: 8px;
+            /* высота для горизонтального скролла */
+            background-color: #143861;
+        }
+    
+        /* ползунок скроллбара */
+        .modal-inner::-webkit-scrollbar-thumb {
+            background-color: #843465;
+            border-radius: 9em;
+            box-shadow: inset 1px 1px 10px #f3faf7;
+        }
+    
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #253861;
+        }
+     
+        /* Стрелки */
+    
+        // ::-webkit-scrollbar-button:vertical:start:decrement {
+        //     background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        //         linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        //         linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+        //     background-color: #f6f8f4;
+        // }
+    
+        // ::-webkit-scrollbar-button:vertical:end:increment {
+        //     background:
+        //         linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        //         linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        //         linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+        //     background-color: #f6f8f4;
+        // }
+    
+        // ::-webkit-scrollbar-button:horizontal:start:decrement {
+        //     background:
+        //         linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        //         linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        //         linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+        //     background-color: #f6f8f4;
+        // }
+    
+        // ::-webkit-scrollbar-button:horizontal:end:increment {
+        //     background:
+        //         linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        //         linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        //         linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+        //     background-color: #f6f8f4;
+        // }
+}
+
+.modal-mobile-buy {
+    scrollbar-color: var(--bgc-btnHoverAccent) var(--bgc-primary);
+    scrollbar-width: thin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 280px;
+    width: 100%;
+    max-height: 70vh;
+    background-color: var(--bgc-secondary);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid var(--bgc-modal);
+    overflow: auto;
+    
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(.17, .67, .83, .67);
+    
+    @media screen and (min-width: 768px){
+           max-width: 450px;
+    }
+   
+   @media screen and (min-width: 1200px) {
+           max-width: 500px;
+           max-height: 80vh;
+    }
+}
