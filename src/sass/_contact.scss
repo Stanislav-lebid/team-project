@@ -146,17 +146,21 @@
             line-height: 29.76px
         }
     }
-    &__link{
+    &__link {
         color: var(--colorText-accent);
         line-height: 18px;
-        scale: 1;
-        
-        &:hover,:focus{
+        transition: color var(--default-transition),transform var(--default-transition);
+        line-height: 1.5;
+        display: inline-block;
+        transform: scale(1);
+    
+        &:hover,
+        &:focus {
             color: var(--colorText-primary);
             transform: scale(1.1);
         }
-        
     }
+    
 }    
 .contact-section{
 
