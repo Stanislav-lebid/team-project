@@ -842,6 +842,36 @@ body.modal-open {
   }
 }
 
+/* Навігація для тел*/
+.navigation-mobile__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.navigation-mobile__item {
+  display: flex;
+  padding: 12px 20px;
+  width: 100%;
+  border: 1px solid #E18298;
+}
+.navigation-mobile__link {
+  font-family: var(--fontFamaly-secondary);
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: var(--colorText-secondary);
+  transition: color var(--default-transition), font-size var(--default-transition);
+  /* Навігація ховер, фокус */
+}
+.navigation-mobile__link:hover, .navigation-mobile__link:focus {
+  color: var(--colorText-primary);
+  font-size: 16px;
+}
+
 /* Oсобисті дані */
 .button-header {
   display: none;
@@ -913,6 +943,30 @@ body.modal-open {
   .button-menu {
     display: none;
   }
+}
+
+.button-mobile {
+  width: 210px;
+  height: 44px;
+  margin: 0 auto;
+  transform: scale(1);
+  color: var(--colorText-primary);
+  background-color: var(--colorText-secondary);
+  transition: transform var(--default-transition), background-color var(--default-transition);
+}
+@media screen and (min-width: 768px) {
+  .button-mobile {
+    width: 186px;
+  }
+}
+.button-mobile:hover, .button-mobile:focus {
+  transform: scale(1.1);
+  background-color: var(--bgc-btnHover);
+}
+
+.button-container {
+  display: block;
+  padding: 60px 20px 20px 20px;
 }
 
 .section {
