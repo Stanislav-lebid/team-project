@@ -5,3 +5,5 @@ import './js/_products-modal-milkshakes';
 import './js/_mobile-menu';
 import './js/_modal-buy';
 import './js/_modal-buy-mobile';
+import './js/_reviews';
+

@@ -202,3 +202,10 @@ img {
 address {
 	font-style: normal;
 }
+body {
+    overflow-x: hidden; /* Заборонити горизонтальний скролінг */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}

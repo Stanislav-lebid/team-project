@@ -1,22 +1,102 @@
-<section>
-    <div>
-        <div>
-            <picture>
-                <source
-                    srcset="./images/testimonials/testimonials1.webp 1x, ./images/testimonials/testimonials1@2x.webp 2x"
-                    type="image/webp" />
-                <source
-                    srcset="./images/testimonials/testimonials1.png 1x, ./images/testimonials/testimonials1@2x.png 2x"
-                    type="image/jpeg" />
-                <img src="./images/testimonials/testimonials1.png" alt="Emily's photo">
-            </picture>
-        </div>
-        <div>
-        <p>
-            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
 
-        </p>
-        </div>
+<section class="section section-testimonials">
+  <div class="container">
+
+    <div class="slider-image">
+      <div class="slider__item">
+          <div class="slider__thumb">
+              <picture>
+                  <source
+                      srcset="./images/testimonials/testimonials1.webp 1x, ./images/testimonials/testimonials1@2x.webp 2x"
+                      type="image/webp" />
+                  <source
+                      srcset="./images/testimonials/testimonials1.png 1x, ./images/testimonials/testimonials1@2x.png 2x"
+                      type="image/jpeg" />
+                  <img src="./images/testimonials/testimonials1.png" alt="Emily's photo">
+              </picture>
+          </div>
+      </div>
+      <div class="slider__item">
+          <div class="slider__thumb">
+              <picture>
+                  <source
+                      srcset="./images/testimonials/testimonials2.webp 1x, ./images/testimonials/testimonials2@2x.webp 2x"
+                      type="image/webp" />
+                  <source
+                      srcset="./images/testimonials/testimonials2.png 1x, ./images/testimonials/testimonials2@2x.png 2x"
+                      type="image/jpeg" />
+                  <img src="./images/testimonials/testimonials2.png" alt="Angela's photo">
+              </picture>
+          </div>
+      </div>
+      <div class="slider__item">
+          <div class="slider__thumb">
+              <picture>
+                  <source
+                      srcset="./images/testimonials/testimonials3.webp 1x, ./images/testimonials/testimonials3@2x.webp 2x"
+                      type="image/webp" />
+                  <source
+                      srcset="./images/testimonials/testimonials3.png 1x, ./images/testimonials/testimonials3@2x.png 2x"
+                      type="image/jpeg" />
+                  <img src="./images/testimonials/testimonials3.png" alt="Fiona's photo">
+              </picture>
+          </div>
+      </div>
     </div>
+    <div class="slider">
+      <div class="slider__item">
+        
+        <div class="slider__textfield">
+          <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+              sem. In hendrerit nulla quam nunc, accumsan
+              congue. Lorem ipsum primis in nibh vel risus.</p>
+      </div>
+      <p class="slider__name">Emily, Los Angeles</p>
+      </div>
+      <div class="slider__item">
+        <div class="slider__textfield">
+          <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+              sem. In hendrerit nulla quam nunc, accumsan
+              congue. Lorem ipsum primis in nibh vel risus.</p>
+      </div>
+      <p class="slider__name">Angela, New York</p>
+      </div>
+      <div class="slider__item">
+        <div class="slider__textfield">
+          <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+              sem. In hendrerit nulla quam nunc, accumsan
+              congue. Lorem ipsum primis in nibh vel risus.</p>
+      </div>
+      <p class="slider__name">Fiona, Chicago</p>
+      </div>
+    </div>
+    <div class="slick-dots" style="display: flex;" role="tablist">
+      <li role="presentation">
+        <button type="button">
+          1
+        </button>
+      </li>
+      <li role="presentation" class="slick-active">
+        <button type="button">
+          2
+        </button>
+      </li>
+      <li>
+        <button type="button">
+          3
+        </button>
+      </li>
+    </div>
+  </div>
 </section>
+
+<script>
+  // Ініціалізуйте Slick Slider
+  $(document).ready(function(){
+    $('.slider').slick({
+      dots: true, // Увімкнути навігаційні крапки
+      arrows: false, // Вимкнути стрілки
+      adaptiveHeight: true // Адаптувати висоту слайдера в залежності від вмісту
+    });
+  });
+</script>

@@ -1,9 +1,15 @@
 
 .contact-section{
+    padding-bottom: 30px;
+    padding-top: 30px;
+  @include media-min (768px) {
     padding-bottom: 40px;
-    @include media-min(1200px) {
-        padding-bottom: 120px;
-    }
+    padding-top: 40px;
+  }
+  @include media-min (1200px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 
 
