@@ -3,6 +3,7 @@
 @import './utils/variables';
 @import './utils/mixin';
 @import './utils/base';
+@import './utils/visually-hidden';
 
 
 @import './header/logo';
@@ -20,9 +21,10 @@
 @import './products';
 @import './about';
 @import './modal-about';
+@import './advantages';
 
 
-//@import './backdrop';
+
 @import './modal';
 @import './modal-buy';
 

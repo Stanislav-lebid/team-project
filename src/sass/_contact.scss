@@ -24,8 +24,6 @@
     margin-bottom: 20px;
     line-height: 18px;
 
-//     max-width: 280px;
-//    max-height: 412px;
     @include media-min(320px) {
         width: 280px;
         height: 412px;
@@ -189,8 +187,8 @@
 }
 .contact-button{
     display: flex;
-    flex-direction: column; /* Розташування в колонку */
-    justify-content: center; /* Горизонтальне центрування */
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center;
     @media screen and (min-width:768px){
         display: flex;

@@ -170,7 +170,7 @@ address {
 }
 
 body {
-  overflow-x: hidden; /* Заборонити горизонтальний скролінг */
+  overflow-x: hidden;
 }
 
 html, body {
@@ -305,6 +305,26 @@ body.modal-open {
   overflow-y: scroll;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .logo {
   display: block;
   width: 200px;
@@ -320,7 +340,6 @@ body.modal-open {
   height: 100%;
 }
 
-/* Хедер */
 .header-nav {
   position: absolute;
   top: 0;
@@ -427,7 +446,6 @@ body.modal-open {
   color: var(--colorText-secondary);
   transform: scale(1);
   transition: color var(--default-transition), transform var(--default-transition);
-  /* Навігація ховер, фокус */
 }
 .navigation__link:hover, .navigation__link:focus {
   color: var(--colorText-primary);
@@ -441,7 +459,6 @@ body.modal-open {
   }
 }
 
-/* Oсобисті дані */
 .button-header {
   display: none;
   border: none;
@@ -471,7 +488,6 @@ body.modal-open {
   }
 }
 
-/* backdrop */
 .backdrop-mobile.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -480,19 +496,6 @@ body.modal-open {
 
 .backdrop-mobile.is-hidden .backdrop-mobile__container {
   transform: translatey(-100%);
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  visibility: visible;
-  overflow-y: scroll;
-  transition: opacity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67), visibility 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  z-index: 10;
 }
 
 .backdrop-mobile {
@@ -575,7 +578,6 @@ body.modal-open {
   padding: 60px 20px 20px 20px;
 }
 
-/* Навігація для тел*/
 .navigation-mobile__list {
   display: flex;
   flex-direction: column;
@@ -1784,6 +1786,108 @@ body.modal-open {
   color: var(--bgc-btnHoverAccent);
 }
 
+.advantages {
+  background-color: var(--bgc-primary);
+}
+.advantages__list {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+  }
+}
+.advantages__item {
+  display: block;
+  padding-bottom: 32px;
+}
+.advantages__title {
+  display: block;
+  padding-bottom: 24px;
+  font-family: var(--fontFamaly-primary);
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--colorText-primary);
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .advantages__title {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__title {
+    font-size: 58px;
+  }
+}
+.advantages__text {
+  font-family: var(--fontFamaly-secondary);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages__text {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__text {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+.advantages__title.icon::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.advantages__title.icon::before {
+  margin-bottom: 40px;
+  background-image: url(../images/advantages/icon1.png);
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .advantages__title.icon::before {
+    background-image: url(../images/advantages/icon1@2x.png);
+  }
+}
+.advantages__title.apples::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.advantages__title.apples::before {
+  margin-bottom: 40px;
+  background-image: url(../images/advantages/apples-svgrepo.png);
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .advantages__title.apples::before {
+    background-image: url(../images/advantages/apples-svgrepo@2x.png);
+  }
+}
+.advantages__title.heart::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.advantages__title.heart::before {
+  margin-bottom: 40px;
+  background-image: url(../images/advantages/heart.png);
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .advantages__title.heart::before {
+    background-image: url(../images/advantages/heart@2x.png);
+  }
+}
+
 .backdrop.is-hidden .modal-list {
   transform: translate(-50%, -50%) scale(0);
 }
@@ -2650,8 +2754,8 @@ body.modal-open {
 
 .contact-button {
   display: flex;
-  flex-direction: column; /* Розташування в колонку */
-  justify-content: center; /* Горизонтальне центрування */
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
