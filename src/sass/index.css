@@ -170,7 +170,7 @@ address {
 }
 
 body {
-  overflow-x: hidden; /* Заборонити горизонтальний скролінг */
+  overflow-x: hidden;
 }
 
 html, body {
@@ -340,7 +340,6 @@ body.modal-open {
   height: 100%;
 }
 
-/* Хедер */
 .header-nav {
   position: absolute;
   top: 0;
@@ -447,7 +446,6 @@ body.modal-open {
   color: var(--colorText-secondary);
   transform: scale(1);
   transition: color var(--default-transition), transform var(--default-transition);
-  /* Навігація ховер, фокус */
 }
 .navigation__link:hover, .navigation__link:focus {
   color: var(--colorText-primary);
@@ -461,7 +459,6 @@ body.modal-open {
   }
 }
 
-/* Oсобисті дані */
 .button-header {
   display: none;
   border: none;
@@ -491,7 +488,6 @@ body.modal-open {
   }
 }
 
-/* backdrop */
 .backdrop-mobile.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -500,19 +496,6 @@ body.modal-open {
 
 .backdrop-mobile.is-hidden .backdrop-mobile__container {
   transform: translatey(-100%);
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  visibility: visible;
-  overflow-y: scroll;
-  transition: opacity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67), visibility 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  z-index: 10;
 }
 
 .backdrop-mobile {
@@ -595,7 +578,6 @@ body.modal-open {
   padding: 60px 20px 20px 20px;
 }
 
-/* Навігація для тел*/
 .navigation-mobile__list {
   display: flex;
   flex-direction: column;
@@ -2772,8 +2754,8 @@ body.modal-open {
 
 .contact-button {
   display: flex;
-  flex-direction: column; /* Розташування в колонку */
-  justify-content: center; /* Горизонтальне центрування */
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 768px) {

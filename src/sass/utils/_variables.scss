@@ -1,7 +1,5 @@
-// всі основні зміні містяться у цьому файлі
 :root {
 
-    // змінні для тексту
     --colorText-primary: #d41443;
     --colorText-secondary: #ffffff;
     --colorText-third: #ffa5ba;
@@ -9,25 +7,20 @@
     --colorText-accent: #907e82;
     --color-icon: #fea5bb;
 
-    // змінні для фонів
     --bgc-primary: #fff5f6;
     --bgc-secondary: #ffb8ca;
     --bgc-modal: #e17992;
     --bgc-btnHover: #ecebeb;
     --bgc-other: #f0d1a5;
     --bgc-accent: #c2e297;
-    // колір для бордеру
     --border-decorative: #e1e1e1;
   
-    // зміння для ховерів
     --hover-primary: #f88ca5;
     --hover-secondary: #e8c086;
     --hover-third: #acd17b;
 
-    //це колір для ховеру по кнопці локації
     --bgc-btnHoverAccent: #bd123c;
   
-    //шрифти
     --fontFamaly-primary: 'Titan One', cursive;
     --fontFamaly-secondary: 'DM Sans', sans-serif;
 
