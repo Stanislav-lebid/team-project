@@ -6,4 +6,5 @@ import './js/_mobile-menu';
 import './js/_modal-buy';
 import './js/_modal-buy-mobile';
 import './js/_reviews';
+import './js/_modal-about';
 

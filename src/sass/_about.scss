@@ -1,0 +1,209 @@
+.about-container {
+  @media screen and (max-width: 767px) {
+    background-size: auto;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position: 50% 76%;
+    background-image: url(../images/about/bcg-about-mobile@1x.png);
+  }
+}
+
+.about-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-size: contain;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-color: var(--bgc-primary);
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-position: 100% 100%;
+    background-image: url(../images/about/bcg-about-desktop@1x.png);
+  }
+
+  @media screen and (min-width: 1800px) {
+    background-size: cover;
+    background-position: top;
+  }
+}
+
+.about-section__lable {
+  font-family: var(--fontFamaly-primary);
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: var(--colorText-third);
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about-section__title {
+  font-family: var(--fontFamaly-primary);
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--colorText-primary);
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+    margin-bottom: 60px;
+  }
+}
+
+.about-content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+
+.about-picture {
+  width: 280px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 99px;
+    margin-top: 0;
+    width: 501px;
+  }
+}
+
+.about-text {
+  margin-top: 40px;
+  margin-right: 80px;
+
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    max-width: 220px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    max-width: 334px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 90px;
+    max-width: 463px;
+  }
+}
+
+.about-text__pre-info {
+  font-family: var(--fontFamaly-secondary);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: var(--colorText-other);
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.78;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+  }
+}
+
+.about-text__info {
+  font-family: var(--fontFamaly-secondary);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: var(--colorText-accent);
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.78;
+    letter-spacing: 0.04em;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.92;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about-button {
+  width: 176px;
+  background-color: var(--colorText-secondary);
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--colorText-primary);
+  transform: scale(1);
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--bgc-btnHover);
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .about-container {
+    background-image: url(../images/about/bcg-about-mobile@2x.png);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .about-section {
+    background-image: url(../images/about/bcg-about-desktop@2x.png);
+  }
+}

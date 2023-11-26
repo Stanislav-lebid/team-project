@@ -5,21 +5,24 @@
 @import './utils/base';
 
 
+@import './header/logo';
+@import './header/page/header-page';
+@import './header/page/button-menu';
+@import './header/page/navigation';
+@import './header/page/button-header';
+@import './header/mobile/backdrop.is-hidden';
+@import './header/mobile/backdrop';
+@import './header/mobile/mobile-menu';
+@import './header/mobile/button-mobile';
+@import './header/mobile/navigation-mobile';
 
-@import './logo';
-@import './header-page';
-@import './button-menu';
-@import './navigation';
-@import './button-header';
-@import './backdrop.is-hidden';
-@import './backdrop-mobile';
-@import './mobile-menu';
-@import './button-mobile';
-@import './navigation-mobile';
 @import './header-hero';
 @import './products';
+@import './about';
+@import './modal-about';
 
-@import './backdrop';
+
+//@import './backdrop';
 @import './modal';
 @import './modal-buy';
 
