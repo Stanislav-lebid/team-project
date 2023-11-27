@@ -170,15 +170,7 @@
 }    
 .contact-section{
 
-    background-image: linear-gradient(to bottom, var(--colorText-secondary) 22%, var(--bgc-primary) 22%);
-    
-        @media screen and (min-width:768px) {
-            background-image: linear-gradient(to bottom, var(--colorText-secondary) 45%, var(--bgc-primary) 45%);
-        }
-    
-        @media screen and (min-width:1200px) {
-            background-image: linear-gradient(to bottom, var(--colorText-secondary) 20%, var(--bgc-primary) 20%);
-        }
+    background-image:var(--colorText-secondary);
 }
 
 .contact-list{

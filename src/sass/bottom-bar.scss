@@ -1,0 +1,11 @@
+.bottom-bar{
+    //background-color: var(--bgc-primary);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    bottom: 40px;
+    padding: 20px 0;
+    left: 30px;
+    right: 30px;
+}
