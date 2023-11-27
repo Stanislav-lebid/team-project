@@ -7,4 +7,6 @@ import './js/_modal-buy';
 import './js/_modal-buy-mobile';
 import './js/_reviews';
 import './js/_modal-about';
+import './js/_modal-question';
+import './js/_button-up';
 
